@@ -85,9 +85,9 @@ All endpoints tested successfully using Postman.
 Successfully implemented REST APIs with middleware, validation, error handling and tested using Postman.
 
 ## Author
-Amit Prajapat  
-B.Tech CSE  
-FSD Practical 5
+Shlokraj Sinha 
+BSc Computer Science 
+FSD Practical 5/6
 
 
 
