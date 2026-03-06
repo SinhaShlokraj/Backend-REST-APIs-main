@@ -24,7 +24,7 @@ Backend/
 ## Installation Steps
 
 1. Clone repository:
-git clone https://github.com/AmitEpoch08/Backend-REST-APIs.git
+git clone [https://github.com/SinhaShlokraj/Backend-REST-APIs-main.git]
 
 
 2. Install dependencies:
@@ -85,9 +85,9 @@ All endpoints tested successfully using Postman.
 Successfully implemented REST APIs with middleware, validation, error handling and tested using Postman.
 
 ## Author
-Shlokraj Sinha 
-BSc. Computer Science
-FSD Practical 5/6
+Amit Prajapat  
+B.Tech CSE  
+FSD Practical 5
 
 
 
