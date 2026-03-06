@@ -24,7 +24,7 @@ Backend/
 ## Installation Steps
 
 1. Clone repository:
-git clone https://github.com/AmitEpoch08/Backend-REST-APIs.git
+git clone [https://github.com/SinhaShlokraj/Backend-REST-APIs-main.git]
 
 
 2. Install dependencies:
