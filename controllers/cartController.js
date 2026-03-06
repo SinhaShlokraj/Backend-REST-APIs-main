@@ -1,22 +1,12 @@
-let cart = [1];
+const Cart = require("../models/Cart");
 
-exports.getCart = (req, res) => {
+exports.getCart = async (req, res) => {
+  const cart = await Cart.find();
   res.json(cart);
 };
 
-exports.addToCart = (req, res) => {
-  const { productId, quantity } = req.body;
-
-  if (!productId || !quantity) {
-    return res.status(400).json({ message: "Invalid data" });
-  }
-
-  const item = {
-    id: cart.length + 1,
-    productId,
-    quantity
-  };
-
-  cart.push(item);
-  res.status(201).json(item);
+exports.addToCart = async (req, res) => {
+  const cart = new Cart(req.body);
+  await cart.save();
+  res.json(cart);
 };

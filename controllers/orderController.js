@@ -1,22 +1,14 @@
-let orders = [{id: 1, userId: 1, totalAmount: 50000}];
+const Order = require("../models/Order");
 
-exports.getOrders = (req, res) => {
+// GET all orders
+exports.getOrders = async (req, res) => {
+  const orders = await Order.find();
   res.json(orders);
 };
 
-exports.createOrder = (req, res) => {
-  const { userId, totalAmount } = req.body;
-
-  if (!userId || !totalAmount) {
-    return res.status(400).json({ message: "Invalid order data" });
-  }
-
-  const order = {
-    id: orders.length + 1,
-    userId,
-    totalAmount
-  };
-
-  orders.push(order);
-  res.status(201).json(order);
+// CREATE order
+exports.createOrder = async (req, res) => {
+  const order = new Order(req.body);
+  await order.save();
+  res.json(order);
 };
